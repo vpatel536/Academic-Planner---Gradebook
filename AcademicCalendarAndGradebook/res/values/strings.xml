@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Academic Calendar</string>
+    <string name="title_activity_main">Academic Calendar</string>
+    <string name="add_assignment_main_button">Add Assignment</string>
+    <string name="menu_settings">Settings</string>
+    <string name="notification_hint">No Events</string>
+    <string name="next_month_button">Next Month</string>
+    <string name="previous_month_button">Previous Month</string>
+    <string name="calendar_action">Calendar</string>
+    <string name="today_action">Today</string>
+    <string name="assignment_action">Assignments</string>
+    <string name="planner_action">Instructors</string>
+    <string name="title_activity_add_assignment">Add Assignment</string>
+    <string name="untitled_assignment">Untitled Assignment</string>
+    <string name="due_date">Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="type_of_assignment">Type</string>
+    <string name="notes">Notes</string>
+    <string name="completed">Completed</string>
+    <string name="grade">Grade</string>
+    <string name="cancel_assignment">Cancel</string>
+    <string name="save_assignment">Save</string>
+    <string name="edit">Edit</string>
+
+    <string-array name="priority_list">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="type_list">
+        <item>Homework</item>
+        <item>Test</item>
+        <item>Study</item>
+        <item>Read</item>
+        <item>Paper</item>
+        <item>Presentation</item>
+        <item>Lab</item>
+        <item>Final</item>
+        <item>Midterm</item>
+        <item>Quiz</item>
+        <item>Project</item>
+        <item>Workbook</item>
+        <item>Lesson</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="course_label">Courses</string>
+    <string name="course_button">Select Course</string>
+    <string name="instructor_label">Instructor</string>
+    <string name="instructor_button">Select Instructor</string>
+    <string name="add_partner_button">Add Partner</string>
+    <string name="save">Save</string>
+    <string name="title_activity_todays_events">Today</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_instructors">Instructors</string>
+    <string name="add_instructor_button">Add Instructor</string>
+    <string name="title_activity_assignments">Assignments</string>
+    <string name="add_assignment_button">Add Assignment</string>
+    <string name="title_activity_add_instructor">Add Instructor</string>
+    <string name="instructor_name">Name</string>
+    <string name="instructor_title">Title</string>
+    <string name="instructor_dept">Department</string>
+    <string name="instructor_class">Select Course</string>
+    <string name="instructor_email">email</string>
+    <string name="instructor_webpage">webpage</string>
+    <string name="instructor_phone">phone</string>
+    <string name="instructor_office_hours">office hours</string>
+    <string name="instructor_grades_button">Gradebook</string>
+    <string name="instructor_save_button">Save</string>
+    <string name="add_new">add new</string>
+    <string name="title_activity_courses">Courses</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_course_button">Add course</string>
+    <string name="title_activity_add_courses">AddCourses</string>
+    <string name="course_sdate">Start Date</string>
+    <string name="course_edate">End Date</string>
+    <string name="course_building">Building</string>
+    <string name="course_room">Room</string>
+    <string name="course_time">Class Time</string>
+    <string name="course_gradebook">Gradebook</string>
+    <string name="grade_type">Grading Type</string>
+    <string name="addParameters">Add parameters</string>
+    <string name="gradebooks">Gradebooks</string>
+
+    <string-array name="gradeType_list">
+        <item>Points</item>
+        <item>Percentage</item>
+    </string-array>
+
+    <string name="title_activity_gradebooks">Gradebooks</string>
+    <string name="title_activity_assignment_detail">AssignmentDetailActivity</string>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.psu.rxa5050.academiccalendarandgradebook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.AddAssignment"
+            android:label="@string/title_activity_add_assignment"
+            android:parentActivityName="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.TodaysEvents"
+            android:label="@string/title_activity_todays_events" >
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.Instructors"
+            android:label="@string/title_activity_instructors" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.Assignments"
+            android:label="@string/title_activity_assignments"
+            android:parentActivityName="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.AddInstructor"
+            android:label="@string/title_activity_add_instructor"
+            android:parentActivityName="edu.psu.rxa5050.academiccalendarandgradebook.Instructors" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.psu.rxa5050.academiccalendarandgradebook.Instructors" />
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.Courses"
+            android:label="@string/title_activity_courses" >
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.AddCourses"
+            android:label="@string/title_activity_add_courses" >
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.Gradebooks"
+            android:label="@string/title_activity_gradebooks"
+            android:parentActivityName="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.psu.rxa5050.academiccalendarandgradebook.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.psu.rxa5050.academiccalendarandgradebook.AssignmentDetailActivity"
+            android:label="@string/title_activity_assignment_detail" >
+        </activity>
+    </application>
+
+</manifest>

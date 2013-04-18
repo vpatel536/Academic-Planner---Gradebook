@@ -1,0 +1,106 @@
+<ScrollView xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:ignore="ExtraText" >
+
+    <EditText
+        android:id="@+id/name_of_assignment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:hint="@string/untitled_assignment" />
+    
+    <Spinner 
+        android:id="@+id/type_of_assignment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/type_of_assignment"/>
+    
+   <Button
+       android:id="@+id/due_date"
+       android:paddingLeft="5dp"
+       android:background="@null"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/due_date"
+       android:gravity="left|center"
+       android:onClick="showDatePickerDialog" />
+
+   <Spinner
+          android:id="@+id/priority_spinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:prompt="@string/priority" />
+         
+    <Button
+          android:id="@+id/course_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/course_button" 
+          android:background ="@null" 
+          android:textAlignment="inherit"
+          android:drawableRight ="@drawable/next_month" 
+          android:onClick="selectCourse"/>
+
+
+
+<LinearLayout 
+    android:id="@+id/partner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+</LinearLayout>
+      
+    <Button
+        android:id="@+id/add_partner_button"
+        android:layout_width ="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_partner_button" 
+        android:drawableLeft="@drawable/add_button"
+        android:onClick="addPartner" />
+      		
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" 
+        android:hint="@string/notes" />
+
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >"
+    
+    <CheckBox
+        android:id="@+id/completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/completed"
+        android:onClick="isAssignmentCompleted" />
+    
+    <EditText
+        android:id="@+id/grade"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:hint="@string/grade" />
+    
+</RelativeLayout>
+    
+     
+</LinearLayout>
+
+</ScrollView>

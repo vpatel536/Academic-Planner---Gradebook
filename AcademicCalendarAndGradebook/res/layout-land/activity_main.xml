@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:weightSum="2"
+    tools:context=".MainActivity" >
+    
+<LinearLayout
+    android:layout_width="0dp" 
+    android:layout_height="match_parent" 
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/add_assignment_main_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add_assignment"
+        android:text="@string/add_assignment_main_button" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:showWeekNumber="false" />
+    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="0dp" 
+    android:layout_height="match_parent" 
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/calendarDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textIsSelectable="false"
+        android:background="#000"
+        android:textColor="#ffffff"/>
+
+    <ListView
+        android:id="@+id/calendarDayEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:divider="#000"
+        android:gravity="center"
+        android:scrollHorizontally="true" />
+
+    <TextView
+        android:id="@+id/calendarMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false" />
+
+    <ListView
+        android:id="@+id/calendarMonthEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scrollHorizontally = "true" />
+    
+</LinearLayout>
+
+</LinearLayout>

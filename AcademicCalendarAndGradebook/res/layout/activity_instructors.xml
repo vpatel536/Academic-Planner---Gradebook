@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructors" >
+
+<ImageButton 
+    android:id = "@+id/add_instructor"
+    android:layout_width = "wrap_content"
+    android:layout_height ="wrap_content"
+    android:src = "@drawable/add_button"
+    android:layout_alignParentTop = "true"
+    android:layout_alignParentRight = "true" 
+    android:contentDescription = "@string/add_instructor_button"
+    android:onClick="add_instructor"/>
+
+<ListView
+    android:id="@+id/instructor_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/add_instructor" />
+
+</RelativeLayout>
